@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="swew17.at.calculator.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <Button
+        android:id="@+id/btZero"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/btThree"
+        app:layout_constraintLeft_toRightOf="@+id/btTwo"
+        android:layout_marginLeft="8dp" />
+
+    <Button
+        android:id="@+id/btEq"
+        android:layout_width="142dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="8dp"
+        android:text="="
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/btOne"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/btThree"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="3"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toRightOf="@+id/btTwo"
+        app:layout_constraintTop_toBottomOf="@+id/btFour" />
+
+    <Button
+        android:id="@+id/btTwo"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="2"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toRightOf="@+id/btOne"
+        app:layout_constraintTop_toBottomOf="@+id/btFour" />
+
+    <Button
+        android:id="@+id/btOne"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:text="1"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/btFour"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/btSix"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="6"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toRightOf="@+id/btFive"
+        app:layout_constraintTop_toBottomOf="@+id/btSeven" />
+
+    <Button
+        android:id="@+id/btFive"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="5"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toRightOf="@+id/btFour"
+        app:layout_constraintTop_toBottomOf="@+id/btSeven" />
+
+    <Button
+        android:id="@+id/btFour"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:text="4"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/btSeven"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/btNine"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="9"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toRightOf="@+id/btEight"
+        app:layout_constraintTop_toBottomOf="@+id/btClear" />
+
+    <Button
+        android:id="@+id/btEight"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="8"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toRightOf="@+id/btSeven"
+        app:layout_constraintTop_toBottomOf="@+id/btClear" />
+
+    <Button
+        android:id="@+id/btSeven"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:text="7"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/btClear"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/btDiv"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="0dp"
+        android:text="/"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="@+id/btClear"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/btMul"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:text="*"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/btDiv"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/btSub"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:text="-"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/btMul"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/btAdd"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:text="+"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/btSub"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/btClear"
+        android:layout_width="120dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="-27dp"
+        android:text="C"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultView" />
+
+    <TextView
+        android:id="@+id/resultView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="5dp" />
+
+</android.support.constraint.ConstraintLayout>
